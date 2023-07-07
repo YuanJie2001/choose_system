@@ -41,3 +41,19 @@ export function deleteLogData() {
     });
     ElMessage.success('清空日志成功');
 }
+
+export function getPassword() {
+    let rs  = fs.readFileSync(path.join(__dirname, './veritify.json'), 'utf8');
+    let data = JSON.parse(rs);
+    return data.password;
+}
+
+export function updatePassword(password = '', newPassword = '') {
+    fs.writeFile(path.join(__dirname, './veritify.json'), JSON.stringify({ password: password }), 'utf8', function (err) {
+        if (err) {
+            ElMessage.error('修改密码失败');
+        } else {
+            ElMessage.success('修改密码成功');
+        }
+    });
+}
