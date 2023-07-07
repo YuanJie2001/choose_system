@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^3.0.1",
-    "axios": "^1.4.0",
     "element-plus": "^2.3.6",
     "path": "^0.12.7",
     "terser": "^5.18.0",
