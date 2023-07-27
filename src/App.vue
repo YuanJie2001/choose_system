@@ -19,8 +19,8 @@
 
 <script setup lang="ts">
 import { shallowRef } from "vue";
-import Index from "./components/Index.vue";
-import Log from "./components/Log.vue";
+import Index from "@/view/Index.vue";
+import Log from "@/view/Log.vue";
 let comName = shallowRef(Index);
 
 </script>

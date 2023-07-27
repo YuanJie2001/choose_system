@@ -51,7 +51,7 @@
 import { onMounted, ref } from 'vue';
 import { getLogData, deleteLogData } from '@/api/request.ts'
 import { ElMessageBox } from 'element-plus';
-import { updatePassword, getPassword } from '../api/request';
+import { updatePassword, getPassword } from '@/api/request.ts';
 let data = ref('')
 const input = ref('')
 const newInput = ref('')

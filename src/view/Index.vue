@@ -182,7 +182,7 @@ function btn3() {
 </template>
 
 <style>
-@import "../assets/css/index.css";
+@import "@/assets/css/index.css";
 
 .logo {
   height: 6em;
